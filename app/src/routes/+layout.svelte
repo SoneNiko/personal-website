@@ -1,26 +1,27 @@
-<div class="container">
-	<header class="header">
-		<a class="header__title" href="/">SvelteKit + Sanity</a>
-	</header>
-	<main>
-		<slot />
-	</main>
-	<footer class="footer">
-		<p class="footer__text">
-			Made with <svg
-				data-sanity-icon="heart-filled"
-				width="1em"
-				height="1em"
-				viewBox="0 0 25 25"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-				><path
-					d="M17 16C15.8 17.3235 12.5 20.5 12.5 20.5C12.5 20.5 9.2 17.3235 8 16C5.2 12.9118 4.5 11.7059 4.5 9.5C4.5 7.29412 6.1 5.5 8.5 5.5C10.5 5.5 11.7 6.82353 12.5 8.14706C13.3 6.82353 14.5 5.5 16.5 5.5C18.9 5.5 20.5 7.29412 20.5 9.5C20.5 11.7059 19.8 12.9118 17 16Z"
-					fill="currentColor"
-					stroke="currentColor"
-					stroke-width="1.2"
-				/></svg
-			> at Sanity
-		</p>
-	</footer>
+<script lang="ts">
+	import '../app.css';
+	import Hamburger from '../components/Hamburger.svelte';
+	import Sidebar from '../components/Sidebar.svelte';
+
+	let sidebarOpen = true;
+</script>
+
+<svelte:head>
+	<script src="/seedrandom.js"></script>
+	<script src="/canvas.js"></script>
+</svelte:head>
+
+<canvas id="backgroundCanvas" class="fixed top-0 left-0 w-full h-full -z-10" />
+
+<div class="flex min-h-screen">
+	<Sidebar bind:open={sidebarOpen} />
+
+	<div class="min-h-screen">
+		<div class="left-[300px] fixed" class:!left-0={!sidebarOpen}>
+			<Hamburger bind:open={sidebarOpen} />
+		</div>
+		<div class="p-10 flex flex-col min-h-screen">
+			<slot class="z-10" />
+		</div>
+	</div>
 </div>

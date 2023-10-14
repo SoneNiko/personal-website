@@ -38,6 +38,9 @@ Your SvelteKit app should now be running on [http://localhost:5173/](http://loca
 
 _Feel free to move each of the folders to their own location and check them into version control._
 
+
+
+
 ### Add content
 
 1. Visit the Studio and create and publish a new `Post` document

@@ -1,31 +1,30 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils';
 	import { urlFor } from '$lib/utils/image';
-	import type { Post } from '$lib/utils/sanity';
+	import type { Project } from '$lib/utils/sanity';
 
-	export let post: Post;
+	export let project: Project;
 </script>
 
-<div class="card">
-	{#if post.mainImage}
+<a class="" href={`/projects/${project.slug.current}`}>
+<div class="border-2 border-gray-400 text-gray-400 hover:border-white hover:text-white transition-colors rounded-lg p-5 flex gap-8 items-center max-w-[600px] h-[200px]">
+	{#if project.mainImage}
 		<img
-			class="card__cover"
-			src={urlFor(post.mainImage).width(500).height(300).url()}
-			alt="Cover image for {post.title}"
+		class="w-fit h-fit max-w-[110px] max-h-[110px] min-w-[110px] min-h-[110px]"
+			src={urlFor(project.mainImage).width(200).height(200).url()}
+			alt="Cover image for {project.title}"
 		/>
 	{:else}
-		<div class="card__cover--none" />
+		<div class="" />
 	{/if}
 
-	<div class="card__container">
-		<h3 class="card__title">
-			<a class="card__link" href={`/post/${post.slug.current}`}>
-				{post.title}
-			</a>
-		</h3>
-		<p class="card__excerpt">{post.excerpt}</p>
-		<p class="card__date">
-			{formatDate(post._createdAt)}
+	<div class="w-full flex flex-col">
+		<h3>{project.title}</h3>
+		<p class="hidden sm:block">{project.description}</p>
+		<div class="flex-1"></div>
+		<p class="text-xs text-gray-400 border-t-[1px] border-gray-600 mt-3">
+			{formatDate(project._createdAt)}
 		</p>
 	</div>
 </div>
+</a>
