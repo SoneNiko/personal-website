@@ -6,8 +6,7 @@
 	let routes = [
 		{ name: 'Home', path: '/' },
 		{ name: 'About', path: '/about' },
-		{ name: 'Stuff I can do', path: '/skills' },
-		{ name: 'Stuff I did do', path: '/projects' },
+		{ name: 'Stuff I did', path: '/projects' },
 		{ name: 'Contact', path: '/contact' }
 	];
 
