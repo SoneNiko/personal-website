@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-	<script src="/seedrandom.js"></script>
+	<!-- <script src="/seedrandom.js"></script> -->
 	<script src="/canvas.js"></script>
 </svelte:head>
 
