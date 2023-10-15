@@ -2,4 +2,6 @@
 	<title>About Me</title>
 </svelte:head>
 
-About Me
+<h1>About Me</h1>
+
+

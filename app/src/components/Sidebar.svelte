@@ -32,7 +32,7 @@
 			<div class="text-9xl mr-4">N</div>
 			<div class="text-5xl flex flex-col justify-center">
 				<div>IKOLAS</div>
-				<div>HEISE.</div>
+				<div class="flex"><div>HEISE</div> <span>.</span></div>
 			</div>
 		</div>
 	</div>

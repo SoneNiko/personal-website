@@ -1,6 +1,8 @@
 let canvas;
 let ctx;
 
+let huge = false;
+
 let size = 2049;
 
 if (window.innerHeight > (size - 1) / 2 || window.innerHeight > (size - 1) / 2) {
@@ -120,11 +122,18 @@ function resizeCanvas(middle, fractal_array, canvas, ctx) {
 		margin -= 0.001;
 	}
 
+	if (count / (canvasWidth * canvasHeight) > 0.05) {
+		huge = true;
+	}
+
 	ctx.fill();
 	ctx.closePath();
 }
 
 function updateMiddle() {
+	if (huge) {
+		return;
+	}
 	middle = 0.67 + amplitude * Math.sin(angle);
 	angle += frequency;
 	resizeCanvas(middle, fractal_array, canvas, ctx);

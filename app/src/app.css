@@ -1,4 +1,27 @@
 @tailwind base;
+
+/* Firefox */
+* {
+	scrollbar-width: thin;
+	scrollbar-color: rgb(0, 0, 0);
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+	background: rgb(0, 0, 0);
+	border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+	background-color: rgb(0, 0, 0);
+	border-radius: 14px;
+	border: 2px solid rgb(255, 255, 255);
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -26,6 +49,17 @@
 	h4,
 	.h4 {
 		@apply text-lg sm:text-lg;
+	}
+
+	p,
+	.p {
+		@apply mb-4;
+	}
+
+	.rainbow-text {
+		background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+		-webkit-background-clip: text;
+		color: transparent;
 	}
 
 	.btn {
