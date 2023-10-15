@@ -57,7 +57,7 @@
 
 	<div class="flex-1" />
 
-	<div class="border-t-2 border-gray-400 h-[130px]">Stuff</div>
+	<div class=" border-gray-400 h-[130px]"></div>
 </aside>
 
 <div class="min-w-[300px] h-full sidebar-bg hidden lg:block" class:open />
