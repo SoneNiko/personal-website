@@ -73,10 +73,6 @@
 		left: 0;
 	}
 
-	.sidebar-bg .open {
-		display: block;
-	}
-
 	.sidebar-bg:not(.open) {
 		display: none;
 	}
