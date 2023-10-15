@@ -123,7 +123,7 @@ function resizeCanvas(middle, fractal_array, canvas, ctx) {
 	}
 
 	if (count / (canvasWidth * canvasHeight) < minPixelRatio && margin < 0.1) {
-		margin *= 1.1;
+		margin *= 2;
 	} else if (count / (canvasWidth * canvasHeight) > minPixelRatio * 10 && margin > 0.000000005) {
 		margin -= 0.001;
 	}
@@ -141,7 +141,6 @@ function resizeCanvas(middle, fractal_array, canvas, ctx) {
 function updateMiddle() {
 	let futureTimeOut = 40;
 	if (huge) {
-		console.log('huge');
 		futureTimeOut *= 2;
 	}
 	middle = startMiddle + amplitude * Math.sin(angle);
