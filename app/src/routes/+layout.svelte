@@ -4,10 +4,17 @@
 	import Sidebar from '../components/Sidebar.svelte';
 
 	let sidebarOpen = true;
+
+	const currentDate = new Date();
+	const isPrideMonth = currentDate.getMonth() === 5;
 </script>
 
 <svelte:head>
 	<script src="/canvas.js"></script>
+
+	{@html `<link rel="icon" href="${
+		isPrideMonth ? '/pride-favicon.png' : '/favicon.png'
+	}" type="image/x-icon">`}
 </svelte:head>
 
 <canvas id="backgroundCanvas" class="fixed top-0 left-0 w-full h-full -z-10" />
