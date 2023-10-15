@@ -10,11 +10,13 @@ if (window.innerHeight > (size - 1) / 2 || window.innerHeight > (size - 1) / 2) 
 }
 
 const roughness = 1.0;
-let middle = 0.67;
+
+let startMiddle = 0.67;
+let middle = startMiddle;
 let margin = 0.000000005;
 let angle = 0;
-const amplitude = 0.02; // The amount of fluctuation
-const frequency = 0.005; // The speed of fluctuation
+const amplitude = 0.1; // The amount of fluctuation
+const frequency = 0.006; // The speed of fluctuation
 
 let minPixelRatio = 0.005;
 
@@ -29,7 +31,11 @@ console.log('Fractal generated in ' + (t2 - t1) + ' ms');
 function diamondSquare(size, roughness) {
 	const array = new Array(size).fill().map(() => new Array(size).fill(0));
 
-	// Math.seedrandom(navigator.userAgent); i have some concerns about this cus it implies that any future client side math.random call is not going to be random anymore. it sure sounds like a massive problem
+	// Math.seedrandom(navigator.userAgent);
+	// i have some concerns about this cus it implies that any future client
+	// side math.random call is not going to be random anymore. it sure sounds
+	// like a massive problem cus random is used in cryptographic functions
+	// in particular
 
 	// Initialize the corners
 	array[0][0] = Math.random();
@@ -116,7 +122,7 @@ function resizeCanvas(middle, fractal_array, canvas, ctx) {
 		}
 	}
 
-	if (count / (canvasWidth * canvasHeight) < minPixelRatio && margin < 0.4) {
+	if (count / (canvasWidth * canvasHeight) < minPixelRatio && margin < 0.1) {
 		margin *= 2;
 	} else if (count / (canvasWidth * canvasHeight) > minPixelRatio * 10 && margin > 0.000000005) {
 		margin -= 0.001;
@@ -131,17 +137,19 @@ function resizeCanvas(middle, fractal_array, canvas, ctx) {
 }
 
 function updateMiddle() {
+	let futureTimeOut = 40;
 	if (huge) {
-		return;
+		console.log('huge');
+		futureTimeOut *= 2;
 	}
-	middle = 0.67 + amplitude * Math.sin(angle);
+	middle = startMiddle + amplitude * Math.sin(angle);
 	angle += frequency;
 	resizeCanvas(middle, fractal_array, canvas, ctx);
 	while (canvas.width !== window.innerWidth && canvas.height !== window.innerHeight) {
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
 	}
-	setTimeout(updateMiddle, 40);
+	setTimeout(updateMiddle, futureTimeOut);
 }
 
 window.onload = function () {
@@ -149,7 +157,7 @@ window.onload = function () {
 	ctx = canvas.getContext('2d');
 
 	updateMiddle();
-	window.addEventListener('resize', (event) => {
+	window.addEventListener('resize', () => {
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
 	});
