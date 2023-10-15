@@ -10,11 +10,8 @@
 
 <h1>Projects</h1>
 
-
 <div class="grid xl:grid-cols-2 xl:w-full gap-10">
 	{#each data.projects as project}
-	<Card project={project}></Card>
-{/each}
+		<Card {project} />
+	{/each}
 </div>
-
-

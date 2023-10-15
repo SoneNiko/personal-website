@@ -46,8 +46,8 @@
 		{#each routes as route}
 			<a
 				class="m-3 text-lg font-bold transition-all flex {route.path === $page.url.pathname
-					? 'brightness-100 translate-x-2 underline'
-					: 'brightness-50 hover:translate-x-1'}"
+					? 'text-white translate-x-2 underline'
+					: 'hover:translate-x-1'}"
 				href={route.path}
 			>
 				<div class="flex-1 text-2xl">{route.name}</div>

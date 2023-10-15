@@ -38,3 +38,22 @@ export interface Project {
 	body: PortableTextBlock[];
 	link?: string;
 }
+
+export async function getContents(): Promise<Content[]> {
+	return await client.fetch(
+		groq`*[_type == "content" && defined(identifier)] | order(_createdAt desc)`
+	);
+}
+
+export async function getContent(identifier: string): Promise<Content> {
+	return await client.fetch(groq`*[_type == "content" && identifier == $identifier][0]`, {
+		identifier
+	});
+}
+
+export interface Content {
+	_type: 'content';
+	_createdAt: string;
+	identifier: string;
+	body: PortableTextBlock[];
+}

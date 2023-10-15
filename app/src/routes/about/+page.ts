@@ -1,13 +1,13 @@
-import { getProjects } from '$lib/utils/sanity';
+import { getContent } from '$lib/utils/sanity';
 import { error } from '@sveltejs/kit';
 import type { PageLoad } from './$types';
 
 export const load = (async () => {
-	const projects = await getProjects();
+	const about = await getContent('about');
 
-	if (projects) {
+	if (about) {
 		return {
-			projects
+			about
 		};
 	}
 

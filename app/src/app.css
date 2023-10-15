@@ -52,7 +52,41 @@
 	}
 
 	p,
-	.p {
+	ul,
+	ol {
+		@apply mb-4;
+	}
+
+	* > p:last-child,
+	* > ul:last-child,
+	* > ol:last-child {
+		@apply mb-4;
+	}
+
+	a {
+		@apply hover:underline text-gray-500;
+	}
+
+	ol {
+		@apply list-decimal list-inside ml-6;
+	}
+
+	ul {
+		@apply list-disc list-inside ml-6;
+	}
+
+	ul,
+	ol {
+		@apply !my-2;
+	}
+
+	ul > li,
+	ol > li {
+		@apply mb-2;
+	}
+
+	ul > li:last-child,
+	ol > li:last-child {
 		@apply mb-4;
 	}
 
