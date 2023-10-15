@@ -32,7 +32,10 @@
 			<div class="text-9xl mr-4">N</div>
 			<div class="text-5xl flex flex-col justify-center">
 				<div>IKOLAS</div>
-				<div class="flex"><div>HEISE</div> <span>.</span></div>
+				<div class="flex">
+					<div>HEISE</div>
+					<span>.</span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -57,7 +60,7 @@
 
 	<div class="flex-1" />
 
-	<div class=" border-gray-400 h-[130px]"></div>
+	<div class=" border-gray-400 h-[130px]" />
 </aside>
 
 <div class="min-w-[300px] h-full sidebar-bg hidden lg:block" class:open />
