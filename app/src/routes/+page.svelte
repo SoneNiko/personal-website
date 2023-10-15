@@ -24,15 +24,15 @@
 
 <div class="flex-1" />
 
-<div class="w-11/12 2xl:!w-[1060px] border-t-2">
-	<div class="lg:w-3/4 2xl:!w-[800px]">
+<div class="w-11/12 2xl:!w-[1060px] border-t-[1px] border-gray-400">
+	<div class="xl:w-3/4 2xl:!w-[800px]">
 		<p class="mb-3">
 			I am a German CompSci student at the University of Constance with an interest in
 			Cyber-security, Back-end Development and Software Engineering
 		</p>
 
-		<p>
-			BTW: The background on this page is automatically generated. It is using the diamond-square
+		<p class="group transition-all">
+			<span class="pr-4 group-hover:rainbow-text group-hover:brightness-200 transition-all">BTW: </span> The background on this page is automatically generated. It is using the diamond-square
 			algorithm to generate a heightmap from which one line is used while the others are blacked
 			out. The middle of the line is animated in a sin wave. you might see some glitching, cus i
 			turn down the margin whenever there is too many pixels to draw. Otherwise it starts lagging.
