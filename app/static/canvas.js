@@ -124,7 +124,7 @@ function resizeCanvas(middle, fractal_array, canvas, ctx) {
 
 	if (count / (canvasWidth * canvasHeight) < minPixelRatio && margin < 0.1) {
 		margin *= 2;
-	} else if (count / (canvasWidth * canvasHeight) > minPixelRatio * 10 && margin > 0.000000005) {
+	} else if (count / (canvasWidth * canvasHeight) > minPixelRatio * 20 && margin > 0.000000005) {
 		margin -= 0.001;
 	}
 
