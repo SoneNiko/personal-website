@@ -36,8 +36,8 @@
 					<Icon src={Star} size="20" solid mini />
 					<Icon src={Star} size="20" solid mini />
 					<Icon src={Star} size="20" solid mini />
+					<Icon src={Star} size="20" solid mini />
 				</span>
-				<Icon src={Star} size="20" solid mini />
 			</div>
 		</div>
 
@@ -61,9 +61,8 @@
 					<Icon src={Star} size="20" solid mini />
 					<Icon src={Star} size="20" solid mini />
 					<Icon src={Star} size="20" solid mini />
+					<Icon src={Star} size="20" solid mini />
 				</span>
-				<Icon src={Star} size="20" solid mini />
-
 				<Icon src={Star} size="20" solid mini />
 			</div>
 		</div>
