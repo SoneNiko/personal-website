@@ -30,16 +30,20 @@
 	me:
 </p>
 
-<div class="flex gap-8 border-b-[1px] pb-4 mb-4">
-	<a href="/contact" class="btn glitched" id="discord-btn" on:click={discordClick}>Discord</a>
-	<a href="mailto:heisenikolas@gmail.com" class="btn glitched">Email Me</a>
-	<a href="https://www.linkedin.com/in/nikolas-heise-4a2a7b221/" class="btn glitched">LinkedIn</a>
+<div class="flex flex-col sm:!flex-row sm:!gap-8 items-center border-b-[1px] pb-4 mb-4">
+	<a href="/contact" class="btn lg:glitched w-fit" id="discord-btn" on:click={discordClick}
+		>Discord</a
+	>
+	<a href="mailto:heisenikolas@gmail.com" class="btn lg:glitched w-fit">Email Me</a>
+	<a href="https://www.linkedin.com/in/nikolas-heise-4a2a7b221/" class="btn lg:glitched w-fit"
+		>LinkedIn</a
+	>
 </div>
 
 <p>If you are just looking to find me on the internet, here you go:</p>
 
-<div class="flex gap-8">
-	<a href="https://github.com/soneniko" class="btn glitched">GitHub</a>
-	<a href="https://sonefall.com/cv" class="btn glitched">CV. </a>
-	<a href="https://www.instagram.com/soneniko/" class="btn glitched">Instagram</a>
+<div class="flex flex-col sm:!flex-row sm:!gap-8 items-center">
+	<a href="https://github.com/soneniko" class="btn lg:glitched">GitHub</a>
+	<a href="https://sonefall.com/cv" class="btn lg:glitched">CV. </a>
+	<a href="https://www.instagram.com/soneniko/" class="btn lg:glitched">Instagram</a>
 </div>
