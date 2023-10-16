@@ -16,11 +16,11 @@
 
 <div class="flex-1" />
 
-<div class="sm:!flex gap-4">
+<div class=" flex flex-col sm:!flex-row gap-4 items-center">
 	<img
 		src="https://github-readme-stats.vercel.app/api/top-langs?username=soneniko&show_icons=true&locale=en&layout=compact&theme=vision-friendly-dark"
 		alt="ovi"
-		class="min-h-[160px] min-w-[288px] max-h-[160px] max-w-[288px]"
+		class="h-[160px] w-[288px]"
 	/>
 
 	<div

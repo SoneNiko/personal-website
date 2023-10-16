@@ -26,7 +26,7 @@
 		<div class="left-[300px] fixed" class:!left-0={!sidebarOpen}>
 			<Hamburger bind:open={sidebarOpen} />
 		</div>
-		<div class="p-10 flex flex-col min-h-screen">
+		<div class="p-5 sm:p-10 flex flex-col min-h-screen">
 			<slot class="z-10" />
 		</div>
 	</div>
