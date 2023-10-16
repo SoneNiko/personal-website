@@ -63,6 +63,10 @@
 		@apply mb-4;
 	}
 
+	div p a {
+		@apply text-gray-500;
+	}
+
 	a {
 		@apply hover:underline;
 	}
