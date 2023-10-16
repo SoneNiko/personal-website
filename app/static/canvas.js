@@ -143,7 +143,7 @@ function updateMiddle() {
 	if (huge) {
 		futureTimeOut *= 2;
 	}
-	middle = startMiddle + amplitude * Math.sin(angle);
+	middle = startMiddle + amplitude * Math.cos(angle);
 	angle += frequency;
 	resizeCanvas(middle, fractal_array, canvas, ctx);
 	while (canvas.width !== window.innerWidth && canvas.height !== window.innerHeight) {
