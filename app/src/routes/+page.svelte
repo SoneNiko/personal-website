@@ -66,7 +66,7 @@
 			<span><span>Other</span>wise</span> <span><span>i</span>t</span>
 			<span><span>sta</span>rts</span>
 			<span><span>lagg</span>ing.</span> <span><span>Als</span>o,</span>
-			<span><span>optim</span>izing</span><span><span> t</span>his</span>
+			<span><span>optim</span>izing</span><span><span>{' '}t</span>his</span>
 			<span><span>s</span>o</span> <span><span>i</span>t</span>
 			<span><span>doe</span>snt</span> <span><span>tu</span>rn</span> <span><span>yo</span>ur</span>
 			<span><span>ro</span>om</span> <span><span>in</span>to</span> <span><span>a</span></span>
@@ -82,7 +82,7 @@
 
 	<div>or</div>
 
-	<a class="btn lg:glitched" href="https://github.com/SoneNiko/personal-website">My GitHub</a>
+	<a class="btn lg:glitched" href="https://github.com/SoneNiko/">My GitHub</a>
 </div>
 
 <div class="flex-1" />
