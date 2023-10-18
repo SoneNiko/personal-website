@@ -40,7 +40,7 @@
 			<span><span>automat</span>ically</span> <span><span>gener</span>ated.</span>
 			<span><span>I</span>t</span>
 			<span><span>i</span>s</span> <span><span>usi</span>ng</span> <span><span>th</span>e</span>
-			<span><span>diamond</span>-square</span><span><span> alg</span>orithm</span>
+			<span><span>diamond</span>-square</span><span><span>{' '}alg</span>orithm</span>
 			<span><span>t</span>o</span>
 			<span><span>gene</span>rate</span> <span><span>a</span></span>
 			<span><span>heigh</span>tmap</span>
@@ -51,21 +51,9 @@
 			<span><span>ou</span>t.</span><span><b /> The</span> <span><span>mid</span>dle</span>
 			<span><span>o</span>f</span> <span><span>th</span>e</span>
 			<span><span>li</span>ne</span> <span><span>i</span>s</span> <span><span>anim</span>ated</span>
-			<span><span>i</span>n</span> <span><span>a</span></span> <span><span>si</span>n</span>
+			<span><span>i</span>n</span> <span><span>a</span></span> <span><span>co</span>s</span>
 			<span><span>wav</span>e.</span>
-			<span><span>yo</span>u</span> <span><span>mig</span>ht</span> <span><span>se</span>e</span>
-			<span><span>so</span>me</span> <span><span>glitc</span>hing,</span>
-			<span><span>cu</span>s</span>
-			<span><span>i</span></span> <span><span>tu</span>rn</span> <span><span>do</span>wn</span><span
-				><b />the</span
-			>
-			<span><span>mar</span>gin</span> <span><span>when</span>ever</span>
-			<span><span>the</span>re</span>
-			<span><span>i</span>s</span> <span><span>to</span>o</span> <span><span>ma</span>ny</span>
-			<span><span>pix</span>els</span> <span><span>t</span>o</span> <span><span>dra</span>w.</span>
-			<span><span>Other</span>wise</span> <span><span>i</span>t</span>
-			<span><span>sta</span>rts</span>
-			<span><span>lagg</span>ing.</span> <span><span>Als</span>o,</span>
+			<span><span>Als</span>o,</span>
 			<span><span>optim</span>izing</span><span><span>{' '}t</span>his</span>
 			<span><span>s</span>o</span> <span><span>i</span>t</span>
 			<span><span>doe</span>snt</span> <span><span>tu</span>rn</span> <span><span>yo</span>ur</span>
