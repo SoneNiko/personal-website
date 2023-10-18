@@ -23,7 +23,7 @@ const config = {
 					'https://github-readme-stats.vercel.app'
 				],
 				'font-src': ['self', 'https://fonts.gstatic.com'],
-				'style-src': ['self', 'https://fonts.googleapis.com'],
+				'style-src': ['self', 'https://fonts.googleapis.com', 'unsafe-inline'],
 				'worker-src': ['self', 'blob:'],
 				'connect-src': ['self', 'https://wyxxfyyr.api.sanity.io/'],
 				'frame-src': ['self', 'https://www.youtube.com'],
