@@ -15,7 +15,7 @@ let startMiddle = 0.5;
 let middle = startMiddle;
 let margin = 0.0006;
 let angle = 0;
-const amplitude = 0.2; // The amount of fluctuation
+const amplitude = 0.1; // The amount of fluctuation
 const frequency = 0.003; // The speed of fluctuation
 
 let minPixelRatio = 0.0001;
