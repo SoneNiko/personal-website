@@ -11,7 +11,32 @@ const config = {
 		// adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
 		// If your environment is not supported or you settled on a specific environment, switch out the adapter.
 		// See https://kit.svelte.dev/docs/adapters for more information about adapters.
-		adapter: adapter()
+		adapter: adapter(),
+		csp: {
+			directives: {
+				'script-src': ['self', 'https://va.vercel-scripts.com', 'https://wyxxfyyr.api.sanity.io/'],
+				'img-src': [
+					'self',
+					'data:',
+					'https://wyxxfyyr.api.sanity.io/',
+					'https://cdn.sanity.io/',
+					'https://github-readme-stats.vercel.app'
+				],
+				'font-src': ['self', 'https://fonts.gstatic.com'],
+				'style-src': ['self', 'https://fonts.googleapis.com'],
+				'worker-src': ['self', 'blob:'],
+				'connect-src': ['self', 'https://wyxxfyyr.api.sanity.io/'],
+				'frame-src': ['self', 'https://www.youtube.com'],
+				'frame-ancestors': ['self'],
+				'base-uri': ['self'],
+				'form-action': ['self'],
+				'object-src': ['none'],
+				'block-all-mixed-content': true,
+				'upgrade-insecure-requests': true
+			},
+
+			mode: 'auto'
+		}
 	}
 };
 
