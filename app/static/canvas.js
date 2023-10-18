@@ -11,11 +11,11 @@ if (window.innerHeight > (size - 1) / 2 || window.innerHeight > (size - 1) / 2) 
 
 const roughness = 1.0;
 
-let startMiddle = 0.67;
+let startMiddle = 0.5;
 let middle = startMiddle;
-let margin = 0.000000005;
+let margin = 0.0005;
 let angle = 0;
-const amplitude = 0.1; // The amount of fluctuation
+const amplitude = 0.2; // The amount of fluctuation
 const frequency = 0.006; // The speed of fluctuation
 
 let minPixelRatio = 0.005;
@@ -122,11 +122,11 @@ function resizeCanvas(middle, fractal_array, canvas, ctx) {
 		}
 	}
 
-	if (count / (canvasWidth * canvasHeight) < minPixelRatio && margin < 0.1) {
-		margin *= 2;
-	} else if (count / (canvasWidth * canvasHeight) > minPixelRatio * 20 && margin > 0.000000005) {
-		margin -= 0.001;
-	}
+	// if (count / (canvasWidth * canvasHeight) < minPixelRatio && margin < 0.1) {
+	// 	margin *= 2;
+	// } else if (count / (canvasWidth * canvasHeight) > minPixelRatio * 20 && margin > 0.000000005) {
+	// 	margin -= 0.001;
+	// }
 
 	if (count / (canvasWidth * canvasHeight) > 0.05) {
 		huge = true;
