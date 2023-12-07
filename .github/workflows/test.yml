@@ -1,0 +1,21 @@
+name: Test
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Secrets to env
+      uses: shine1594/secrets-to-env-action@v1.6.1
+      with:
+        secrets: ${{ toJSON(secrets) }}
+        secrets_env: all
+
+
+
