@@ -10,7 +10,7 @@
 <section>
 	<div class="flex gap-4 mb-8">
 		{#if data.mainImage}
-			<img src={urlFor(data.mainImage).height(200).width(200).url()} alt="Cover image for {data.title}" />
+			<img class="max-h-[200px] max-w-[200px]" src={urlFor(data.mainImage).height(200).width(200).url()} alt="Cover image for {data.title}" />
 		
 		{/if}
 

@@ -1,3 +1,2 @@
 User-agent: *
 Disallow: /cdn-cgi/
-Sitemap: http://www.sonefall.com/sitemap.xml
