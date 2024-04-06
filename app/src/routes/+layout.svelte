@@ -11,6 +11,7 @@
 
 <svelte:head>
 	<script src="/canvas.js"></script>
+	<script src="/clarity.js"></script>
 
 	{@html `<link rel="icon" href="${
 		isPrideMonth ? '/pride-favicon.ico' : '/favicon.ico'
