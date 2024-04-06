@@ -14,7 +14,8 @@ const config = {
 		adapter: adapter(),
 		csp: {
 			directives: {
-				'script-src': ['self', 'https://va.vercel-scripts.com', 'https://wyxxfyyr.api.sanity.io/', 'https://www.clarity.ms/', 'unsafe-inline'],
+				'default-src': ['self', "https://*.clarity.ms", "https://c.bing.com", 'unsafe-inline'],
+				'script-src': ['*', 'self', 'https://va.vercel-scripts.com', 'https://wyxxfyyr.api.sanity.io/', 'https://www.clarity.ms/', 'unsafe-inline'],
 				'img-src': [
 					'self',
 					'data:',
