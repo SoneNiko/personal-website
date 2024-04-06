@@ -22,7 +22,8 @@ const config = {
 					'https://wyxxfyyr.api.sanity.io/',
 					'https://cdn.sanity.io/',
 					'https://github-readme-stats.vercel.app',
-					'https://*.clarity.ms/'
+					'https://*.clarity.ms/',
+					'https://c.bing.com/'
 				],
 				'font-src': ['self', 'https://fonts.gstatic.com'],
 				'style-src': ['self', 'https://fonts.googleapis.com', 'unsafe-inline'],
