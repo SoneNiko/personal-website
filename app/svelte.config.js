@@ -21,12 +21,13 @@ const config = {
 					'data:',
 					'https://wyxxfyyr.api.sanity.io/',
 					'https://cdn.sanity.io/',
-					'https://github-readme-stats.vercel.app'
+					'https://github-readme-stats.vercel.app',
+					'https://*.clarity.ms/'
 				],
 				'font-src': ['self', 'https://fonts.gstatic.com'],
 				'style-src': ['self', 'https://fonts.googleapis.com', 'unsafe-inline'],
 				'worker-src': ['self', 'blob:'],
-				'connect-src': ['self', 'https://wyxxfyyr.api.sanity.io/'],
+				'connect-src': ['self', 'https://wyxxfyyr.api.sanity.io/', 'https://*.clarity.ms/'],
 				'frame-src': ['self', 'https://www.youtube.com'],
 				'frame-ancestors': ['self'],
 				'base-uri': ['self'],
