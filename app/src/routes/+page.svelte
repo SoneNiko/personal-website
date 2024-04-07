@@ -8,7 +8,7 @@
 
 <div class="flex-1" />
 
-<h1 class="flex">
+<h1 class="flex font-normal">
 	<div class="mr-4 h-[2ch]">{'>'}</div>
 
 	<Typewriter keepCursorOnFinish showCursorOnDelay={true} interval={150} delay={800}
@@ -17,8 +17,8 @@
 	<div class="ml-4 h-[2ch]">;</div>
 </h1>
 
-<h1>I'm Nikolas.</h1>
-<h2>I build things using code.</h2>
+<h1 class="font-normal">I'm Nikolas.</h1>
+<h2 class="font-normal">I build things using code.</h2>
 
 <p class="text-gray-400 text-sm">Hopefully never again for the internet.</p>
 
@@ -28,7 +28,7 @@
 	<div class="xl:w-3/4 2xl:!w-[800px]">
 		<p class="mb-3">
 			I am a German CompSci student at the University of Constance with an interest in
-			Cyber-security, Back-end Development and Software Engineering
+			Cyber-security, Back-end Development and Software Engineering.
 		</p>
 
 		<p class="group transition-all">

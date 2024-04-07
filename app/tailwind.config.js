@@ -7,6 +7,10 @@ export default {
 				fade: 'fadeOut 2s ease-in-out'
 			},
 
+			fontFamily: {
+				"mono": ["Inconsolata", "mono"]
+			},
+
 			keyframes: (theme) => ({
 				fadeOut: {
 					'0%': { opacity: 0 },
