@@ -7,36 +7,19 @@
 		{ name: 'Home', path: '/' },
 		{ name: 'About', path: '/about' },
 		{ name: 'Stuff I did', path: '/projects' },
-		{ name: 'Contact', path: '/contact' }
+		{ name: 'Contact', path: '/contact' },
+		{ name: 'CV', path: '/cv' }
 	];
 
-	// let socials: Social[] = [
-	// 	// TODO: Add links
-	// 	{ name: 'linkedin', url: '' },
-	// 	{ name: 'github', url: '' },
-	// 	{ name: 'instagram', url: '' },
-	// 	{ name: 'mailto', url: '' },
-	// 	{ name: 'twitch', url: '' },
-	// 	{ name: 'twitter', url: '' },
-	// 	{ name: 'youtube', url: '' }
-	// ];
+	const isPrideMonth = new Date().getMonth() === 5;
 </script>
 
 <aside
 	class="fixed min-w-[300px] w-[300px] h-full flex border-r-2 border-gray-400 p-4 flex-col !backdrop-blur-sm"
 	class:open
 >
-	<div class="border-b-2 border-gray-400 h-[130px]">
-		<div class="flex justify-center glitched transition-all">
-			<div class="text-9xl mr-4">N</div>
-			<div class="text-5xl flex flex-col justify-center">
-				<div>IKOLAS</div>
-				<div class="flex">
-					<div>HEISE</div>
-					<span>.</span>
-				</div>
-			</div>
-		</div>
+	<div class="border-b-2 border-gray-400 p-8 flex justify-center items-center">
+		<img src={isPrideMonth ? "logo-pride.png" : "logo-white.png"} alt="Logo" class="h-[80px]">
 	</div>
 
 	<div class="flex-1" />

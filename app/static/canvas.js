@@ -92,10 +92,12 @@ function diamondSquare(size, roughness) {
 	return array;
 }
 
-function resizeCanvas(middle, fractal_array, canvas, ctx) {
-	let color = '#323232';
+function findMiddle(a, b) {
+	return Math.min(a, b) + Math.abs(a - b) / 2;
+}
 
-	ctx.fillStyle = color;
+function resizeCanvas(middle, fractal_array, canvas, ctx) {
+	
 
 	const canvasWidth = canvas.width;
 	const canvasHeight = canvas.height;
@@ -109,14 +111,30 @@ function resizeCanvas(middle, fractal_array, canvas, ctx) {
 
 	ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 
-	ctx.beginPath();
+	let color = '#323232';
+
 
 	for (let en = 0; en < highestX; en++) {
 		const fractalColumn = fractal_array[en];
 		for (let jn = 0; jn < highestY; jn++) {
 			const value = fractalColumn[jn];
 			if (value > lowerBound && value < upperBound) {
-				ctx.rect(en, jn, 1, 1);
+
+				// let base = Math.floor(Math.random() * 64).toString(16);
+				// ctx.fillStyle = "#"+base+base+base
+
+				ctx.fillStyle = color;
+
+				if (value > findMiddle(middle, upperBound)) {
+					color = '#454545'; // blue
+				} else if (value < findMiddle(middle, lowerBound)) {
+					color = '#8c8c8c'; // red
+				} else {
+					color = '#323232';
+					ctx.fillStyle = color;
+				}
+
+				ctx.fillRect(en, jn, 1, 1);
 				count++;
 			}
 		}
@@ -136,8 +154,7 @@ function resizeCanvas(middle, fractal_array, canvas, ctx) {
 		huge = false;
 	}
 
-	ctx.fill();
-	ctx.closePath();
+	
 }
 
 function updateMiddle() {

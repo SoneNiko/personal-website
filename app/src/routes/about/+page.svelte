@@ -24,7 +24,7 @@
 	/>
 
 	<div
-		class=" w-[288px] h-[160px] border-[1px] border-gray-400 py-3 px-5 rounded-md font-sans animate-fade"
+		class=" w-[288px] h-[160px] border-[1px] border-gray-400 py-3 px-5 rounded-md font-sans animate-fade bg-black"
 	>
 		<p class="font-bold text-yellow-500">Skills:</p>
 
