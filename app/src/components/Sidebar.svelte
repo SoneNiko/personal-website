@@ -1,7 +1,14 @@
-<script>
+<script lang="ts">
 	import { page } from '$app/stores';
 
+	let screenWidth: number;
 	export let open = true;
+
+	$: if (screenWidth > 1025) {
+		open = true;
+	} else {
+		open = false;
+	}
 
 	let routes = [
 		{ name: 'Home', path: '/' },
@@ -14,12 +21,14 @@
 	const isPrideMonth = new Date().getMonth() === 5;
 </script>
 
+<svelte:window bind:innerWidth={screenWidth} />
+
 <aside
 	class="fixed min-w-[300px] w-[300px] h-full flex border-r-2 border-gray-400 p-4 flex-col !backdrop-blur-sm"
 	class:open
 >
 	<div class="border-b-2 border-gray-400 p-8 flex justify-center items-center">
-		<img src={isPrideMonth ? "logo-pride.png" : "logo-white.png"} alt="Logo" class="h-[80px]">
+		<img src={isPrideMonth ? 'logo-pride.png' : 'logo-white.png'} alt="Logo" class="h-[80px]" />
 	</div>
 
 	<div class="flex-1" />
