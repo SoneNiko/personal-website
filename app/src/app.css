@@ -1,5 +1,15 @@
 @tailwind base;
 
+@font-face {
+	font-family: 'Fira Sans';
+	src: url(/fonts/fira-sans.woff2) format('woff2');
+}
+
+@font-face {
+	font-family: 'Inconsolata';
+	src: url(/fonts/inconsolata.woff2) format('woff2');
+}
+
 /* Firefox */
 * {
 	scrollbar-width: thin;
