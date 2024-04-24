@@ -19,7 +19,7 @@
 	class:open
 >
 	<div class="border-b-2 border-gray-400 p-8 flex justify-center items-center">
-		<img src={isPrideMonth ? "logo-pride.png" : "logo-white.png"} alt="Logo" class="h-[80px]">
+		<img src={isPrideMonth ? '/logo-pride.png' : '/logo-white.png'} alt="Logo" class="h-[80px]" />
 	</div>
 
 	<div class="flex-1" />
