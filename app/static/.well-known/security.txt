@@ -1,5 +1,5 @@
 Contact: mailto:heisenikolas@gmail.com
 Expires: 2079-12-31T23:00:00.000Z
 Preferred-Languages: en, de
-Canonical: https://www.sonefall.com/.well-known/security.txt
-Hiring: https://www.sonefall.com/cv
+Canonical: https://www.nikoh.dev/.well-known/security.txt
+Hiring: https://www.nikoh.dev/cv
