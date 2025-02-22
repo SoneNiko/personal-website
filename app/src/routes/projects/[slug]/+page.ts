@@ -8,5 +8,5 @@ export const load = (async ({ params }) => {
 	const project = await getProject(params.slug);
 	if (project) return project;
 
-	throw error(404, 'Not found');
+	error(404, 'Not found');
 }) satisfies PageLoad;
