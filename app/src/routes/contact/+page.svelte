@@ -45,5 +45,5 @@
 <div class="flex flex-col sm:!flex-row sm:!gap-8 items-center">
 	<a href="https://github.com/soneniko" class="btn lg:glitched">GitHub</a>
 	<a href="https://nikoh.dev/cv" class="btn lg:glitched">CV. </a>
-	<a href="https://www.instagram.com/soneniko/" class="btn lg:glitched">Instagram</a>
+	<p class="btn lg:glitched brightness-50 cursor-not-allowed">My instagram is now private</p>
 </div>
